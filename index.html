@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="./assets/logo.png">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- font-awesome-CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class=" bg-orange-200 border-b-1 border-b-[#E7A700] fixed top-0 w-full z-50">
+        <div class="w-11/12 mx-auto ">
+            <div class="navbar">
+                <div id="btn-fuddy" class="navbar-start">
+                    <a class="btn btn-ghost text-xl  hover:bg-[#E7A700] hover:text-[#79320d]">Fuddy</a>
+                </div>
+
+                <div class="navbar-end">
+                    <a href="#categories-button" class="btn btn-warning text-base">Go To Menu</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="md:mt-16">
+
+
+        <!-- <div id=" overlay" class="inset-0 bg-[#000000] opacity-40 absolute h-screen  "></div> -->
+        <div class=" md:w-full w-[800px] md:h-screen h-[500px] 
+            bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('/assets/bg.jpg')] 
+            bg-no-repeat bg-center bg-cover 
+            flex flex-col items-center justify-center ">
+            <h1 class="md:text-5xl text-6xl font-bold text-white text-center md:py-16  pt-50 md:px-0 px-5">Welcome To
+                Fuddy Campus</h1>
+            <div class="pb-16 md:visible invisible"><img class="mx-auto animate-pulse w-[362px]" src="./assets/logo.png"
+                    alt=""></div>
+            <div class="md:py-10 pb-25 pt-10 text-white text-center md:mt-0 -mt-64
+            "><i
+                    class="fa-solid fa-arrow-down bg-[#E7A700] md:text-base text-3xl rounded-full md:py-5 md:pl-3 md:pr-6 py-10 pl-6 pr-12 animate-bounce"></i>
+            </div>
+        </div>
+
+
+
+        <div class="">
+            <p class="bg-[#E7A700] md:w-full w-[800px] text-xl font-semibold text-center py-2">Digital Menu Card For Our
+                Lovely Customer</p>
+
+            <div class="py-28 w-11/12 mx-auto  mb-40 grid md:grid-cols-12 grid-cols-1 gap-5 ">
+
+                <section class="col-span-2 mdw-full bg-[#E7A700] rounded-lg py-2 px-5 ">
+                    <div class=" pt-2 pb-1 mb-3">
+                        <h1
+                            class="text-center mb-5 text-lg font-extrabold bg-[#443f3f] text-white py-2 px-2 rounded-sm  mx-2">
+                            Categories</h1>
+                    </div>
+                    <div id="categories-button" class="sticky top-0">
+
+                    </div>
+
+                </section>
+
+
+                <section class="col-span-7 ">
+                    <h1 class="text-center text-3xl">Our Foods</h1>
+                    <div class="border-1 border-gray-300 mt-7"></div>
+                    <div id="foods-container">
+                        <div class="bg-white border-1 border-gray-300 mt-5 py-10 rounded-xl">
+                            <h3 class="text-center font-semibold">আপনি যদি সুস্বাদু খাবার খেতে চান, তাহলে বোতামে ক্লিক
+                                করুন এবং খাবারটি বেছে নিন এবং অর্ডার করুন।</h3>
+                            <h3 class="text-center font-bold">If you want to eat delicious food, click on the button and
+                                choose the food and order it.</h3>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="col-span-3 bg-white py-10">
+                    <h1 class="text-center">Cart</h1>
+                    <hr class="border-1 border-gray-300">
+                </section>
+            </div>
+            <img src="" alt="">
+        </div>
+
+    </main>
+
+
+
+
+
+<a href="" target="_blank"></a>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+    <dialog id="burger_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+
+            <div id="food-details-container">
+
+
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+
+
+
+
+
+
+    <script src="./js/categories_button.js"></script>
+    <script src="./js/food_id.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/fuddy.js"></script>
+    <script src="./js/blog.js"></script>
+
+</body>
+
+</html>
