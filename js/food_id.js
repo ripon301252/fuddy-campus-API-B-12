@@ -1,29 +1,39 @@
 const loadFoods = (id) => {
+    const spinner = document.getElementById('spinner');
+    spinner.classList.remove('invisible');
 
+    const foodsContainer = document.getElementById('foods-container')
+    foodsContainer.innerHTML = ''
+    
     removeActive()
     const btn = document.getElementById(`btn-${id}`)
     // console.log(btn)
     btn.classList.add('active')
 
-    const url =`https://taxi-kitchen-api.vercel.app/api/v1/categories/${id}`
-    // fetch('https://taxi-kitchen-api.vercel.app/api/v1/foods/random')
-    fetch(url)
-        .then(res => res.json())
-        .then(api => displayFoods(api.foods))
-        .catch(err => console.log(err))
-   
+
+    const url = `https://taxi-kitchen-api.vercel.app/api/v1/categories/${id}`
+    setTimeout(function () {
+        fetch(url)
+            .then(res => res.json())
+            .then(api => displayFoods(api.foods))
+            .catch(err => console.log(err))
+    }, 200)
+
 }
 
 
 const removeActive = () => {
-  const categoryButtons = document.querySelectorAll(".category-btn");
-  //   console.log(categoryButtons);
-  categoryButtons.forEach((btn) => btn.classList.remove("active"));
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    //   console.log(categoryButtons);
+    categoryButtons.forEach((btn) => btn.classList.remove("active"));
 };
 
 
 const displayFoods = (foods) => {
     // console.log(foods)
+
+    document.getElementById('spinner').classList.add('invisible');
+
     const foodsContainer = document.getElementById('foods-container')
     foodsContainer.innerHTML = ''
     foods.forEach(food => {
