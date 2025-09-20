@@ -1,8 +1,9 @@
 const loadFoods = (id) => {
 
-    const btn = document.getElementById('btn-${id}')
-    console.log(btn)
-    // btn.classList.add('active')
+    removeActive()
+    const btn = document.getElementById(`btn-${id}`)
+    // console.log(btn)
+    btn.classList.add('active')
 
     const url =`https://taxi-kitchen-api.vercel.app/api/v1/categories/${id}`
     // fetch('https://taxi-kitchen-api.vercel.app/api/v1/foods/random')
@@ -10,8 +11,6 @@ const loadFoods = (id) => {
         .then(res => res.json())
         .then(api => displayFoods(api.foods))
         .catch(err => console.log(err))
-
-
    
 }
 
@@ -46,7 +45,7 @@ const displayFoods = (foods) => {
                         </div>
                                    
                     </div>
-                        <button class="btn btn-warning "><i class="fa-solid fa-square-plus"></i>Add This Item</button>
+                        <button id = "" class="btn btn-warning card-title"><i class="fa-solid fa-square-plus"></i>Add This Item</button>
                 </div>
             </div>
         `;
