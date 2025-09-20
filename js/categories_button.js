@@ -2,6 +2,7 @@ const loadCategories = () => {
     fetch('https://taxi-kitchen-api.vercel.app/api/v1/categories')
         .then(res => res.json())
         .then(api => displayCategories(api.categories))
+        // .then(api => displayFoods(api.categories))
         .catch(err => console.log(err))
 }
 
@@ -22,5 +23,6 @@ const displayCategories = (categories) =>{
         categoriesButton.appendChild(categoryBtn)
     }
 }
+
 
 loadCategories()
