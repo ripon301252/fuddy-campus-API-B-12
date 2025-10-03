@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./assets/logo.png">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+
+    <!-- font-awesome-CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class=" bg-orange-200 border-b-1 border-b-[#E7A700] fixed top-0 w-full z-50">
+        <div class="w-11/12 mx-auto ">
+            <div class="navbar">
+                <div id="btn-blog" class="navbar-start">
+                    <a class="btn btn-ghost text-xl  hover:bg-[#E7A700] hover:text-[#79320d]">Blog</a>
+                </div>
+
+                <div class="navbar-end">
+                    <a href="#categories-button" class="btn btn-warning text-base">Go To Menu</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="mt-20 w-11/12 mx-auto">
+        <h1 class="md:text-3xl font-bold">Please give your valuable feedback.</h1>
+        <h1 class="md:text-3xl font-bold">আপনার মূল্যবান মতামত জানান।</h1>
+
+        <div class="join join-vertical w-full ">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title md:text-xl font-medium">
+                    <h3>What does our foodie campus look like?</h3>
+                    <h3>আমাদের ভোজনরসিক ক্যাম্পাসটি দেখতে কেমন?</h3>
+                </div>
+
+                <div class="collapse-content">
+                    <textarea class="outline-none border-none" name="" id="" cols="80" rows="3"
+                        placeholder="Wright Your Thinking!"></textarea>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title md:text-xl font-medium">
+                    <h3>How is the quality of our food?</h3>
+                    <h3>আমাদের খাবারের মান কেমন?</h3>
+                </div>
+                <div class="collapse-content">
+                    <textarea class="outline-none border-none" name="" id="" cols="80" rows="3"
+                        placeholder="Wright Your Thinking!"></textarea>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title md:text-xl font-medium">
+                    <h3>How can we improve the quality of our food?</h3>
+                    <h3>আমরা কীভাবে আমাদের খাবারের মান উন্নত করতে পারি?</h3>
+                </div>
+                <div class="collapse-content">
+                    <textarea class="outline-none border-none" name="" id="" cols="80" rows="3"
+                        placeholder="Wright Your Thinking!"></textarea>
+                </div>
+            </div>
+
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title md:text-xl font-medium">
+                    <h3>How is our service quality?</h3>
+                    <h3>আমাদের পরিষেবার মান কেমন?</h3>
+                </div>
+                <div class="collapse-content">
+                    <textarea class="outline-none border-none" name="" id="" cols="80" rows="3"
+                        placeholder="Wright Your Thinking!"></textarea>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title md:text-xl font-medium">
+                    <h3>How can we improve our service quality?</h3>
+                    <h3>আমরা কীভাবে আমাদের পরিষেবার মান উন্নত করতে পারি?</h3>
+                </div>
+                <div class="collapse-content">
+                    <textarea class="outline-none border-none" name="" id="" cols="80" rows="3"
+                        placeholder="Wright Your Thinking!"></textarea>
+                </div>
+            </div>
+
+            <div class="animate-pulse">
+                <h1 class="md:text-3xl font-bold mt-10 text-center">The Fuddy team is waiting for your valuable feedback.</h1>
+                <h1 class="md:text-3xl font-bold mb-20 text-center">ফুডি টিম আপনার মূল্যবান মতামতের জন্য অপেক্ষা করছে। </h1>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="./js/blog.js"></script>
+    <script src="./js/fuddy.js"></script>
+
+</body>
+
+</html>
