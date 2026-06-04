@@ -1,22 +1,35 @@
-📚 Fuddy Campus API
+# 🎓 Fuddy Campus API
 
-Backend API for the Fuddy Campus platform. This server handles authentication, campus data management, and other core functionalities required for the application.
+Simple JavaScript-based API project for Fuddy Campus.
 
+## 🚀 Features
+- Food Select System  
+- Food Order System  
+- Food er YouTube Video dekhar option  
 
+## 🛠️ Tech
+- JavaScript (Manual)  
+- JSON Data  
 
+## 🌐 Live Project
+https://ripon301252.github.io/fuddy-campus-API-B-12/
 
-
-
-👨‍💻 Author
-
-Mahfuzur Rahman
-
-GitHub: https://github.com/ripon301252
-💡 Notes
-Make sure MongoDB is running before starting the server
-Keep your .env file secure
-Customize API routes as per your project needs
-
+## 📡 Functionality
+- View all foods  
+- Select food  
+- Order food  
+- Watch related YouTube video
 
 ## API Link
 https://taxi-kitchen-api.vercel.app/
+
+## 👨‍💻 Author
+Mahfuzur Rahman
+
+
+
+
+
+
+
+
