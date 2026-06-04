@@ -5,7 +5,7 @@ Simple JavaScript-based API project for Fuddy Campus.
 ## 🚀 Features
 - Food Select System  
 - Food Order System  
-- Food er YouTube Video dekhar option  
+- Watch YouTube videos for each food 
 
 ## 🛠️ Tech
 - JavaScript (Manual)  
